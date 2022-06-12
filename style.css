@@ -50,7 +50,7 @@ body {
     color: #121212;
 }
 
-Button {
+#Button {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -64,7 +64,7 @@ Button {
     background: #E4C1AE;
     border-radius: 32px;
 }
-span {
+.span {
     width: 48px;
     height: 16px;
     font-family: 'Roboto';
@@ -77,3 +77,65 @@ span {
     order: 0;
     flex-grow: 0;
 }
+
+.modal_overlay {
+    position: fixed;
+    z-index: 99;
+    width: 1440px;
+    height: 960px;
+    left: 0px;
+    top: 0px;
+    background: rgba(12, 12, 12, 0.5)
+}
+
+.modal_window {
+    position: absolute;
+    z-index: 100;
+    width: 920px;
+    height: 210px;
+    left: 260px;
+    top: 375px;
+    background: #FFFFFF;
+}
+
+.modal_title {
+    position: absolute;
+    width: 380px;
+    height: 50px;
+    left: calc(50% - 380px/2 - 175px);
+    top: calc(50% - 50px/2 - 24px);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    color: #121212;
+    
+}
+
+.modal_content {
+    position: absolute;
+    width: 380px;
+    height: 24px;
+    left: calc(50% - 380px/2 - 175px);
+    top: calc(50% - 24px/2 + 37px);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #121212;
+}
+
+.modal_close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.modal_close:active {
+    transform: scale(0.9);
+}
+
